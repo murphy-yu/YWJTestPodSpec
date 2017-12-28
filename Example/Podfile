@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'YWJTestPodSpec_Example' do
+  pod 'YWJTestPodSpec', :path => '../'
+
+  target 'YWJTestPodSpec_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
